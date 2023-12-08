@@ -1,0 +1,29 @@
+C:\Users\tomes\OneDrive\Desktop\Basic Web API\BasicWebAPI\BasicWebAPI.DtoModels\bin\Debug\net6.0\BasicWebAPI.DtoModels.deps.json
+C:\Users\tomes\OneDrive\Desktop\Basic Web API\BasicWebAPI\BasicWebAPI.DtoModels\bin\Debug\net6.0\BasicWebAPI.DtoModels.runtimeconfig.json
+C:\Users\tomes\OneDrive\Desktop\Basic Web API\BasicWebAPI\BasicWebAPI.DtoModels\bin\Debug\net6.0\BasicWebAPI.DtoModels.dll
+C:\Users\tomes\OneDrive\Desktop\Basic Web API\BasicWebAPI\BasicWebAPI.DtoModels\bin\Debug\net6.0\BasicWebAPI.DtoModels.pdb
+C:\Users\tomes\OneDrive\Desktop\Basic Web API\BasicWebAPI\BasicWebAPI.DtoModels\obj\Debug\net6.0\BasicWebAPI.DtoModels.csproj.AssemblyReference.cache
+C:\Users\tomes\OneDrive\Desktop\Basic Web API\BasicWebAPI\BasicWebAPI.DtoModels\obj\Debug\net6.0\BasicWebAPI.DtoModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tomes\OneDrive\Desktop\Basic Web API\BasicWebAPI\BasicWebAPI.DtoModels\obj\Debug\net6.0\BasicWebAPI.DtoModels.AssemblyInfoInputs.cache
+C:\Users\tomes\OneDrive\Desktop\Basic Web API\BasicWebAPI\BasicWebAPI.DtoModels\obj\Debug\net6.0\BasicWebAPI.DtoModels.AssemblyInfo.cs
+C:\Users\tomes\OneDrive\Desktop\Basic Web API\BasicWebAPI\BasicWebAPI.DtoModels\obj\Debug\net6.0\BasicWebAPI.DtoModels.csproj.CoreCompileInputs.cache
+C:\Users\tomes\OneDrive\Desktop\Basic Web API\BasicWebAPI\BasicWebAPI.DtoModels\obj\Debug\net6.0\BasicWebAPI.DtoModels.dll
+C:\Users\tomes\OneDrive\Desktop\Basic Web API\BasicWebAPI\BasicWebAPI.DtoModels\obj\Debug\net6.0\refint\BasicWebAPI.DtoModels.dll
+C:\Users\tomes\OneDrive\Desktop\Basic Web API\BasicWebAPI\BasicWebAPI.DtoModels\obj\Debug\net6.0\BasicWebAPI.DtoModels.pdb
+C:\Users\tomes\OneDrive\Desktop\Basic Web API\BasicWebAPI\BasicWebAPI.DtoModels\obj\Debug\net6.0\BasicWebAPI.DtoModels.genruntimeconfig.cache
+C:\Users\tomes\OneDrive\Desktop\Basic Web API\BasicWebAPI\BasicWebAPI.DtoModels\obj\Debug\net6.0\ref\BasicWebAPI.DtoModels.dll
+C:\Users\tomes\OneDrive\Desktop\BasicWeb\BasicWebAPI\BasicWebAPI.DtoModels\bin\Debug\net6.0\BasicWebAPI.DtoModels.deps.json
+C:\Users\tomes\OneDrive\Desktop\BasicWeb\BasicWebAPI\BasicWebAPI.DtoModels\bin\Debug\net6.0\BasicWebAPI.DtoModels.runtimeconfig.json
+C:\Users\tomes\OneDrive\Desktop\BasicWeb\BasicWebAPI\BasicWebAPI.DtoModels\bin\Debug\net6.0\BasicWebAPI.DtoModels.dll
+C:\Users\tomes\OneDrive\Desktop\BasicWeb\BasicWebAPI\BasicWebAPI.DtoModels\bin\Debug\net6.0\BasicWebAPI.DtoModels.pdb
+C:\Users\tomes\OneDrive\Desktop\BasicWeb\BasicWebAPI\BasicWebAPI.DtoModels\obj\Debug\net6.0\BasicWebAPI.DtoModels.csproj.AssemblyReference.cache
+C:\Users\tomes\OneDrive\Desktop\BasicWeb\BasicWebAPI\BasicWebAPI.DtoModels\obj\Debug\net6.0\BasicWebAPI.DtoModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tomes\OneDrive\Desktop\BasicWeb\BasicWebAPI\BasicWebAPI.DtoModels\obj\Debug\net6.0\BasicWebAPI.DtoModels.AssemblyInfoInputs.cache
+C:\Users\tomes\OneDrive\Desktop\BasicWeb\BasicWebAPI\BasicWebAPI.DtoModels\obj\Debug\net6.0\BasicWebAPI.DtoModels.AssemblyInfo.cs
+C:\Users\tomes\OneDrive\Desktop\BasicWeb\BasicWebAPI\BasicWebAPI.DtoModels\obj\Debug\net6.0\BasicWebAPI.DtoModels.csproj.CoreCompileInputs.cache
+C:\Users\tomes\OneDrive\Desktop\BasicWeb\BasicWebAPI\BasicWebAPI.DtoModels\obj\Debug\net6.0\BasicWebAPI.DtoModels.sourcelink.json
+C:\Users\tomes\OneDrive\Desktop\BasicWeb\BasicWebAPI\BasicWebAPI.DtoModels\obj\Debug\net6.0\BasicWebAPI.DtoModels.dll
+C:\Users\tomes\OneDrive\Desktop\BasicWeb\BasicWebAPI\BasicWebAPI.DtoModels\obj\Debug\net6.0\refint\BasicWebAPI.DtoModels.dll
+C:\Users\tomes\OneDrive\Desktop\BasicWeb\BasicWebAPI\BasicWebAPI.DtoModels\obj\Debug\net6.0\BasicWebAPI.DtoModels.pdb
+C:\Users\tomes\OneDrive\Desktop\BasicWeb\BasicWebAPI\BasicWebAPI.DtoModels\obj\Debug\net6.0\BasicWebAPI.DtoModels.genruntimeconfig.cache
+C:\Users\tomes\OneDrive\Desktop\BasicWeb\BasicWebAPI\BasicWebAPI.DtoModels\obj\Debug\net6.0\ref\BasicWebAPI.DtoModels.dll
