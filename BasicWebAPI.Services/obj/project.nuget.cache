@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4PEAFJlRHX8Uq9dFnuMWBCMBKeKloQjQ8e335i/v8GU3er9Kvn7Jh0rQwb3EX++KOwOyAKu7I4Dv8vFsv+X27g==",
+  "dgSpecHash": "mQG7cQ0ymFBU+na8vUj9tVEGyXJ+67/ifWvyuIR0c0YAcuDzijPWDSOXFzEuQnKFAQyQ9NUjPjfxu+SK43qR5A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\tomes\\OneDrive\\Desktop\\BasicWeb\\BasicWebAPI\\BasicWebAPI.Services\\BasicWebAPI.Services.csproj",
+  "projectFilePath": "C:\\Users\\tomes\\OneDrive\\Desktop\\Basic Web API\\BasicWebAPI\\BasicWebAPI.Services\\BasicWebAPI.Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tomes\\.nuget\\packages\\automapper\\6.0.2\\automapper.6.0.2.nupkg.sha512",
     "C:\\Users\\tomes\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

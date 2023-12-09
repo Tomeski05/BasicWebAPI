@@ -14,6 +14,7 @@ namespace BasicWebAPI.DataAccess.Interface
         void AddContact(Contact contact);
         void UpdateContact(Contact contact);
         void DeleteContact(int id);
+        Contact GetContactsWithCompanyAndCountry(int contactId);
         List<Contact> FilterContacts(int? countryId, int? companyId);
     }
 }

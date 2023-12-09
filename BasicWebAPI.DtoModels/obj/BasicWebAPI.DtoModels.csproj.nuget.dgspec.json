@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tomes\\OneDrive\\Desktop\\BasicWeb\\BasicWebAPI\\BasicWebAPI.DtoModels\\BasicWebAPI.DtoModels.csproj": {}
+    "C:\\Users\\tomes\\OneDrive\\Desktop\\Basic Web API\\BasicWebAPI\\BasicWebAPI.DtoModels\\BasicWebAPI.DtoModels.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tomes\\OneDrive\\Desktop\\BasicWeb\\BasicWebAPI\\BasicWebAPI.DtoModels\\BasicWebAPI.DtoModels.csproj": {
+    "C:\\Users\\tomes\\OneDrive\\Desktop\\Basic Web API\\BasicWebAPI\\BasicWebAPI.DtoModels\\BasicWebAPI.DtoModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tomes\\OneDrive\\Desktop\\BasicWeb\\BasicWebAPI\\BasicWebAPI.DtoModels\\BasicWebAPI.DtoModels.csproj",
+        "projectUniqueName": "C:\\Users\\tomes\\OneDrive\\Desktop\\Basic Web API\\BasicWebAPI\\BasicWebAPI.DtoModels\\BasicWebAPI.DtoModels.csproj",
         "projectName": "BasicWebAPI.DtoModels",
-        "projectPath": "C:\\Users\\tomes\\OneDrive\\Desktop\\BasicWeb\\BasicWebAPI\\BasicWebAPI.DtoModels\\BasicWebAPI.DtoModels.csproj",
+        "projectPath": "C:\\Users\\tomes\\OneDrive\\Desktop\\Basic Web API\\BasicWebAPI\\BasicWebAPI.DtoModels\\BasicWebAPI.DtoModels.csproj",
         "packagesPath": "C:\\Users\\tomes\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tomes\\OneDrive\\Desktop\\BasicWeb\\BasicWebAPI\\BasicWebAPI.DtoModels\\obj\\",
+        "outputPath": "C:\\Users\\tomes\\OneDrive\\Desktop\\Basic Web API\\BasicWebAPI\\BasicWebAPI.DtoModels\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\tomes\\AppData\\Roaming\\NuGet\\NuGet.Config",

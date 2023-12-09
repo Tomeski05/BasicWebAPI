@@ -85,7 +85,6 @@ namespace BasicWebAPI.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError,
                     new { Message = ex.Message });
             }
-
         }
     }
 }

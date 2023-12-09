@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yxyVaflOdoQFjoqeKOgb98wtJ1g23e7PB9LWgCDiBITPJuHC7s0LhtxA8ZqW0rGNfhDbWoVQkRa4n1nWxkLt6w==",
+  "dgSpecHash": "BtODfmBxtfzSSFrqx93Pzv91jPiQlnMiwzBDmEvLaX73B8Ea74rTnt8rANTIIaXr/Won18JwN0A/DQ2pztcwHA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\tomes\\OneDrive\\Desktop\\BasicWeb\\BasicWebAPI\\BasicWebAPI.DtoModels\\BasicWebAPI.DtoModels.csproj",
+  "projectFilePath": "C:\\Users\\tomes\\OneDrive\\Desktop\\Basic Web API\\BasicWebAPI\\BasicWebAPI.DtoModels\\BasicWebAPI.DtoModels.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tomes\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\tomes\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.0\\microsoft.entityframeworkcore.6.0.0.nupkg.sha512",

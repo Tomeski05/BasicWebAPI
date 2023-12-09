@@ -16,13 +16,10 @@ namespace BasicWebAPI.Services.Service
 {
     public class CompanyService: ICompanyService
     {
-        //private readonly ApplicationDbContext _dbContext;
         private readonly ICompanyRepository<Company> _companyRepository;
-        private readonly IMapper _mapper;
 
-        public CompanyService(ApplicationDbContext dbContext, ICompanyRepository<Company> companyRepository)
+        public CompanyService(ICompanyRepository<Company> companyRepository)
         {
-            //_dbContext = dbContext;
             _companyRepository = companyRepository;
         }
 
@@ -35,7 +32,7 @@ namespace BasicWebAPI.Services.Service
         {
             if (string.IsNullOrEmpty(company.Name))
             {
-                throw new Exception("Field company name is required!");
+                throw new Exception("Полето е задолжително!");
             }
 
             try
@@ -47,7 +44,7 @@ namespace BasicWebAPI.Services.Service
                 };
 
                 _companyRepository.AddNewCompany(newCompany);
-                return "Успрешно креирање на нова компанија";
+                return "Успешно креирање на нова компанија!";
             }
             catch (Exception ex)
             {
@@ -62,11 +59,11 @@ namespace BasicWebAPI.Services.Service
 
             if (company == null)
             {
-                throw new Exception("No such note");
+                throw new Exception("Не постои таква компанија.");
             }
 
             _companyRepository.DeleteCompany(companyId);
-            return "Компанијата е успешно избришана";
+            return "Компанијата е успешно избришана!";
         }
 
         public string UpdateCompany(CompanyDto company)
@@ -78,7 +75,7 @@ namespace BasicWebAPI.Services.Service
                 oldCompany.Name = company.Name;
 
                 _companyRepository.UpdateCompany(oldCompany);
-                return "Компанијата е успешно ажурирана";
+                return "Компанијата е успешно ажурирана!";
             }
             catch (Exception ex)
             {

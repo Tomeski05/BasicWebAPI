@@ -30,6 +30,14 @@ namespace BasicWebAPI.DataAccess.Repository
             return _dbContext.Contacts.SingleOrDefault(contact => contact.ContactId == id);
         }
 
+        public Contact GetContactsWithCompanyAndCountry(int contactId)
+        {
+            return _dbContext.Contacts
+            .Include(c => c.Company)
+            .Include(c => c.Country)
+            .FirstOrDefault(c => c.ContactId == contactId);
+        }
+
         public void AddContact(Contact contact)
         {
             try

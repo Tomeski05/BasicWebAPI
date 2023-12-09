@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IzLYV9SZ6PMey6Q6sg30xir17lfvRNqSthKZf+yEz7hSWGb3ogH1xwGGINten8uGZF/GYZrS4dsNaNdrvRMTcw==",
+  "dgSpecHash": "h3MdiT8ZJ+HIaQaYPLQcVnN/Pxr4PQ7wPmjwjmeF127i7n03ul3rRoiMPgjiSeobv6rODFy//i+DaO/eRK7CYA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\tomes\\OneDrive\\Desktop\\BasicWeb\\BasicWebAPI\\BasicWebAPI.Domain\\BasicWebAPI.Domain.csproj",
+  "projectFilePath": "C:\\Users\\tomes\\OneDrive\\Desktop\\Basic Web API\\BasicWebAPI\\BasicWebAPI.Domain\\BasicWebAPI.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tomes\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\tomes\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

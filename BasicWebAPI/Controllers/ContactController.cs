@@ -1,5 +1,9 @@
-﻿using BasicWebAPI.Services.Interface;
+﻿using BasicWebAPI.Domain.Models;
+using BasicWebAPI.DtoModels.ContactDto;
+using BasicWebAPI.Services.Interface;
+using BasicWebAPI.Services.Service;
 using Microsoft.AspNetCore.Mvc;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -29,28 +33,86 @@ namespace BasicWebAPI.Controllers
         }
 
         // GET api/<ContactController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
+        [HttpGet("getAllContacts/{id}")]
+        public ActionResult<List<ContactDto>> GetAllContacts()
         {
-            return "value";
+            try
+            {
+                var allContacts = _contactService.GetAllContacts();
+                return Ok(allContacts);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        //[HttpGet("getContactById/{id}")]
+        //public string GetContactById(int id)
+        //{
+        //    return "value";
+        //}
+
+        [HttpGet("getContactsWithCompanyAndCountry/{id}")]
+        public ActionResult<string> GetContactsWithCompanyAndCountry(int id)
+        {
+            var result = _contactService.GetContactsWithCompanyAndCountry(id);
+            return Ok(result);
+        }
+
+        [HttpGet("filterContacts/{id}")]
+        public ActionResult<string> FilterContacts(int? countryId, int? companyId)
+        {
+            var result = _contactService.FilterContacts(countryId, companyId);
+            return Ok(result);
         }
 
         // POST api/<ContactController>
-        [HttpPost]
-        public void Post([FromBody] string value)
+        [HttpPost("addNewContact")]
+        public ActionResult<string> AddNewContact([FromBody] ContactDto contact)
         {
+            try
+            {
+                string result = _contactService.AddContact(contact);
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    new { Message = ex.Message });
+            }
         }
 
         // PUT api/<ContactController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        [HttpPut("UpdateContact")]
+        public ActionResult UpdateContact([FromBody] ContactDto contact)
         {
+            try
+            {
+                string result = _contactService.UpdateContact(contact);
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    new { Message = ex.Message });
+            }
         }
 
         // DELETE api/<ContactController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
+        [HttpDelete("DeleteContact/{id}")]
+        public ActionResult<string> DeleteContact(int id)
         {
+            try
+            {
+                string result = _contactService.DeleteContact(id);
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    new { Message = ex.Message });
+            }
         }
     }
 }

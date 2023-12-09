@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+EfVixr1V0Gxsyi4Wsfvefmpj/8kMlyUjIGocJ/aFhlDKs2S2eJqzN3HA0rn+XvJ2dOKlpmAgEZO5NQ4JscXFA==",
+  "dgSpecHash": "pZtPuESMVpTzK+jKW1QNQNWhJqv9dkfLVI/ullZecXYflzcJ5n+ZHBRTg95qy2bOokv2Mvo0lIppLeYPJh+tdA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\tomes\\OneDrive\\Desktop\\BasicWeb\\BasicWebAPI\\BasicWebAPI.Automapper\\BasicWebAPI.Automapper.csproj",
+  "projectFilePath": "C:\\Users\\tomes\\OneDrive\\Desktop\\Basic Web API\\BasicWebAPI\\BasicWebAPI.Automapper\\BasicWebAPI.Automapper.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tomes\\.nuget\\packages\\automapper\\6.0.2\\automapper.6.0.2.nupkg.sha512",
     "C:\\Users\\tomes\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

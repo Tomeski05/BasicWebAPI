@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BasicWebAPI.Domain.Models;
+using BasicWebAPI.DtoModels.ContactDto;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +10,12 @@ namespace BasicWebAPI.Services.Interface
 {
     public interface IContactService
     {
+        List<Contact> GetAllContacts();
+        //Contact GetContactById(int id);
+        string AddContact(ContactDto contact);
+        string UpdateContact(ContactDto contact);
+        string DeleteContact(int contactId);
+        List<Contact> FilterContacts(int? countryId, int? companyId);
+        Contact GetContactsWithCompanyAndCountry(int contactId);
     }
 }

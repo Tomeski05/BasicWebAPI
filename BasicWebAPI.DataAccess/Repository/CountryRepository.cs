@@ -19,6 +19,11 @@ namespace BasicWebAPI.DataAccess.Repository
             _dbContext = dbContext;
         }
 
+        public Country GetById(int id)
+        {
+            return _dbContext.Countries.SingleOrDefault(countries => countries.CountryId == id);
+        }
+
         public List<Country> GetAllCountries()
         {
             return _dbContext.Countries.ToList();
