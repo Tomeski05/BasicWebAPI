@@ -1,4 +1,6 @@
-﻿using BasicWebAPI.DataAccess.Interface;
+﻿using AutoMapper;
+using BasicWebAPI.Automapper;
+using BasicWebAPI.DataAccess.Interface;
 using BasicWebAPI.DataAccess.Repository;
 using BasicWebAPI.Domain.DBContext;
 using BasicWebAPI.Domain.Models;
@@ -22,15 +24,21 @@ namespace BasicWebAPI.Services.Service
             _contactRepository = contactRepository;
         }
 
-        public List<Contact> GetAllContacts()
+        public IEnumerable<DtoDto> GetAllContacts()
         {
-            return _contactRepository.GetAllContacts();
-        }
 
-        //public Contact GetContactById(int id)
-        //{
-        //    return _contactRepository.GetContactById(id);
-        //}
+            var contacts = _contactRepository.GetContactsWithCompanyAndCountry();
+
+            var contactDtos = contacts.Select(contact => new DtoDto
+            {
+                ContactId = contact.ContactId,
+                Name = contact.Name,
+                CompanyId = contact.CompanyId,
+                CountryId  = contact.CountryId,
+            });
+
+            return contactDtos;
+        }
 
         public string AddContact(ContactDto contact)
         {
@@ -87,8 +95,6 @@ namespace BasicWebAPI.Services.Service
 
         public IEnumerable<GetContactsDto> GetContactsWithCompanyAndCountry()
         {
-            //return _contactRepository.GetContactsWithCompanyAndCountry();
-
             var contacts = _contactRepository.GetContactsWithCompanyAndCountry();
 
             var contactDtos = contacts.Select(contact => new GetContactsDto

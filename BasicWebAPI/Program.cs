@@ -16,7 +16,7 @@ var connectionStrings = configuration.GetValue<string>("DefaultConnection");
 IocContainer.ConfigureIoCContainer(builder.Services, connectionStrings);
 
 builder.Services.AddControllers().AddJsonOptions(x => x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
-//builder.Services.AddAutoMapper(typeof(MappingProfile));
+builder.Services.AddAutoMapper(typeof(MappingProfile));
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {

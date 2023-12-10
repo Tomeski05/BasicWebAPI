@@ -10,8 +10,7 @@ namespace BasicWebAPI.Services.Interface
 {
     public interface IContactService
     {
-        List<Contact> GetAllContacts();
-        //Contact GetContactById(int id);
+        IEnumerable<DtoDto> GetAllContacts();
         string AddContact(ContactDto contact);
         string UpdateContact(ContactDto contact);
         string DeleteContact(int contactId);

@@ -15,9 +15,13 @@ namespace BasicWebAPI.Automapper
     {
         public MappingProfile()
         {
-            CreateMap<CompanyDto, Company>().ReverseMap();
-            CreateMap<CountryDto, Country>().ReverseMap();
-            CreateMap<ContactDto, Contact>().ReverseMap();
+            CreateMap<Company, CompanyDto>();
+            CreateMap<CompanyDto, Company>();
+
+            CreateMap<Country, CountryDto>().ReverseMap();
+
+            CreateMap<Contact, ContactDto>();
+            CreateMap<ContactDto, Contact>();
         }
     }
 }

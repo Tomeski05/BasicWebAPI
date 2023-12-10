@@ -20,21 +20,9 @@ namespace BasicWebAPI.Controllers
             _contactService = contactService;
         }
 
-        // GET: api/<ContactController>
-        [HttpGet]
-        public IEnumerable<string> Get()
-        {
-            return null;
-            //var contacts = _contactService.GetAllContacts();
-            //return Ok(contacts);
-
-            //    var events = _context.Events.ToList();
-            //    return View(events);
-        }
-
         // GET api/<ContactController>/5
-        [HttpGet("getAllContacts/{id}")]
-        public ActionResult<List<ContactDto>> GetAllContacts()
+        [HttpGet("getAllContacts")]
+        public ActionResult<List<DtoDto>> GetAllContacts()
         {
             try
             {
@@ -46,12 +34,6 @@ namespace BasicWebAPI.Controllers
                 return BadRequest(ex.Message);
             }
         }
-
-        //[HttpGet("getContactById/{id}")]
-        //public string GetContactById(int id)
-        //{
-        //    return "value";
-        //}
 
         [HttpGet("getContactsWithCompanyAndCountry")]
         public IActionResult GetContactsWithCompanyAndCountry()

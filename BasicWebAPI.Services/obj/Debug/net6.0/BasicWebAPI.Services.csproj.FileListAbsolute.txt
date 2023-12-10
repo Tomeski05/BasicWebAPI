@@ -23,9 +23,11 @@ C:\Users\tomes\OneDrive\Desktop\BasicWeb\BasicWebAPI\BasicWebAPI.Services\bin\De
 C:\Users\tomes\OneDrive\Desktop\BasicWeb\BasicWebAPI\BasicWebAPI.Services\bin\Debug\net6.0\BasicWebAPI.Services.runtimeconfig.json
 C:\Users\tomes\OneDrive\Desktop\BasicWeb\BasicWebAPI\BasicWebAPI.Services\bin\Debug\net6.0\BasicWebAPI.Services.dll
 C:\Users\tomes\OneDrive\Desktop\BasicWeb\BasicWebAPI\BasicWebAPI.Services\bin\Debug\net6.0\BasicWebAPI.Services.pdb
+C:\Users\tomes\OneDrive\Desktop\BasicWeb\BasicWebAPI\BasicWebAPI.Services\bin\Debug\net6.0\BasicWebAPI.Automapper.dll
 C:\Users\tomes\OneDrive\Desktop\BasicWeb\BasicWebAPI\BasicWebAPI.Services\bin\Debug\net6.0\BasicWebAPI.DataAccess.dll
 C:\Users\tomes\OneDrive\Desktop\BasicWeb\BasicWebAPI\BasicWebAPI.Services\bin\Debug\net6.0\BasicWebAPI.Domain.dll
 C:\Users\tomes\OneDrive\Desktop\BasicWeb\BasicWebAPI\BasicWebAPI.Services\bin\Debug\net6.0\BasicWebAPI.DtoModels.dll
+C:\Users\tomes\OneDrive\Desktop\BasicWeb\BasicWebAPI\BasicWebAPI.Services\bin\Debug\net6.0\BasicWebAPI.Automapper.pdb
 C:\Users\tomes\OneDrive\Desktop\BasicWeb\BasicWebAPI\BasicWebAPI.Services\bin\Debug\net6.0\BasicWebAPI.DataAccess.pdb
 C:\Users\tomes\OneDrive\Desktop\BasicWeb\BasicWebAPI\BasicWebAPI.Services\bin\Debug\net6.0\BasicWebAPI.DtoModels.pdb
 C:\Users\tomes\OneDrive\Desktop\BasicWeb\BasicWebAPI\BasicWebAPI.Services\bin\Debug\net6.0\BasicWebAPI.Domain.pdb
