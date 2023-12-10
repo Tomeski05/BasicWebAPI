@@ -16,6 +16,6 @@ namespace BasicWebAPI.Services.Interface
         string UpdateContact(ContactDto contact);
         string DeleteContact(int contactId);
         List<Contact> FilterContacts(int? countryId, int? companyId);
-        Contact GetContactsWithCompanyAndCountry(int contactId);
+        IEnumerable<GetContactsDto> GetContactsWithCompanyAndCountry();
     }
 }

@@ -33,7 +33,7 @@ namespace BasicWebAPI.Services.Service
         {
             if (string.IsNullOrEmpty(country.Name))
             {
-                throw new Exception("Задолшително поле!");
+                throw new Exception("Задолжително поле!");
             }
 
             try
@@ -64,7 +64,7 @@ namespace BasicWebAPI.Services.Service
             }
 
             _countryRepository.DeleteCountry(countryId);
-            return "Компанијата е успешно избришана!";
+            return "Земјата е успешно избришана!";
         }
 
         public string UpdateCountry(CountryDto country)
@@ -76,7 +76,7 @@ namespace BasicWebAPI.Services.Service
                 oldCountry.Name = country.Name;
 
                 _countryRepository.UpdateCountry(oldCountry);
-                return "Компанијата е успешно ажурирана!";
+                return "Земјата е успешно ажурирана!";
             }
             catch (Exception ex)
             {

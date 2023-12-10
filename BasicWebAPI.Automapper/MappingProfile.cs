@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
 using BasicWebAPI.Domain.Models;
 using BasicWebAPI.DtoModels.CompanyDto;
+using BasicWebAPI.DtoModels.ContactDto;
+using BasicWebAPI.DtoModels.CountryDto;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +16,8 @@ namespace BasicWebAPI.Automapper
         public MappingProfile()
         {
             CreateMap<CompanyDto, Company>().ReverseMap();
+            CreateMap<CountryDto, Country>().ReverseMap();
+            CreateMap<ContactDto, Contact>().ReverseMap();
         }
     }
 }

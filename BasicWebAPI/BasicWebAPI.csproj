@@ -18,10 +18,12 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BasicWebAPI.Automapper\BasicWebAPI.Automapper.csproj" />
     <ProjectReference Include="..\BasicWebAPI.Domain\BasicWebAPI.Domain.csproj" />
     <ProjectReference Include="..\BasicWebAPI.DtoModels\BasicWebAPI.DtoModels.csproj" />
     <ProjectReference Include="..\BasicWebAPI.IoC\BasicWebAPI.IoC.csproj" />

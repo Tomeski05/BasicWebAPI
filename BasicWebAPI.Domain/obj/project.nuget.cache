@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "h3MdiT8ZJ+HIaQaYPLQcVnN/Pxr4PQ7wPmjwjmeF127i7n03ul3rRoiMPgjiSeobv6rODFy//i+DaO/eRK7CYA==",
+  "dgSpecHash": "5WurCwQ1K5TfHpO6Sbz28MqBRYYo6dD8ILR6s6SgGvj81eoIDOUFIwDiXj5oA0PiJgqtMyF5ELUmcjqanh2hNQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\tomes\\OneDrive\\Desktop\\Basic Web API\\BasicWebAPI\\BasicWebAPI.Domain\\BasicWebAPI.Domain.csproj",
+  "projectFilePath": "C:\\Users\\tomes\\OneDrive\\Desktop\\BasicWeb\\BasicWebAPI\\BasicWebAPI.Domain\\BasicWebAPI.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tomes\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\tomes\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
@@ -33,6 +33,7 @@
     "C:\\Users\\tomes\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\tomes\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\tomes\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\tomes\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\tomes\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\tomes\\.nuget\\packages\\system.configuration.configurationmanager\\4.7.0\\system.configuration.configurationmanager.4.7.0.nupkg.sha512",
     "C:\\Users\\tomes\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",

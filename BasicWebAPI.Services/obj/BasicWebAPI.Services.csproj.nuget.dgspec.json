@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tomes\\OneDrive\\Desktop\\Basic Web API\\BasicWebAPI\\BasicWebAPI.Services\\BasicWebAPI.Services.csproj": {}
+    "C:\\Users\\tomes\\OneDrive\\Desktop\\BasicWeb\\BasicWebAPI\\BasicWebAPI.Services\\BasicWebAPI.Services.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tomes\\OneDrive\\Desktop\\Basic Web API\\BasicWebAPI\\BasicWebAPI.DataAccess\\BasicWebAPI.DataAccess.csproj": {
+    "C:\\Users\\tomes\\OneDrive\\Desktop\\BasicWeb\\BasicWebAPI\\BasicWebAPI.DataAccess\\BasicWebAPI.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tomes\\OneDrive\\Desktop\\Basic Web API\\BasicWebAPI\\BasicWebAPI.DataAccess\\BasicWebAPI.DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\tomes\\OneDrive\\Desktop\\BasicWeb\\BasicWebAPI\\BasicWebAPI.DataAccess\\BasicWebAPI.DataAccess.csproj",
         "projectName": "BasicWebAPI.DataAccess",
-        "projectPath": "C:\\Users\\tomes\\OneDrive\\Desktop\\Basic Web API\\BasicWebAPI\\BasicWebAPI.DataAccess\\BasicWebAPI.DataAccess.csproj",
+        "projectPath": "C:\\Users\\tomes\\OneDrive\\Desktop\\BasicWeb\\BasicWebAPI\\BasicWebAPI.DataAccess\\BasicWebAPI.DataAccess.csproj",
         "packagesPath": "C:\\Users\\tomes\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tomes\\OneDrive\\Desktop\\Basic Web API\\BasicWebAPI\\BasicWebAPI.DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\tomes\\OneDrive\\Desktop\\BasicWeb\\BasicWebAPI\\BasicWebAPI.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\tomes\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,11 +28,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\tomes\\OneDrive\\Desktop\\Basic Web API\\BasicWebAPI\\BasicWebAPI.Domain\\BasicWebAPI.Domain.csproj": {
-                "projectPath": "C:\\Users\\tomes\\OneDrive\\Desktop\\Basic Web API\\BasicWebAPI\\BasicWebAPI.Domain\\BasicWebAPI.Domain.csproj"
+              "C:\\Users\\tomes\\OneDrive\\Desktop\\BasicWeb\\BasicWebAPI\\BasicWebAPI.Domain\\BasicWebAPI.Domain.csproj": {
+                "projectPath": "C:\\Users\\tomes\\OneDrive\\Desktop\\BasicWeb\\BasicWebAPI\\BasicWebAPI.Domain\\BasicWebAPI.Domain.csproj"
               },
-              "C:\\Users\\tomes\\OneDrive\\Desktop\\Basic Web API\\BasicWebAPI\\BasicWebAPI.DtoModels\\BasicWebAPI.DtoModels.csproj": {
-                "projectPath": "C:\\Users\\tomes\\OneDrive\\Desktop\\Basic Web API\\BasicWebAPI\\BasicWebAPI.DtoModels\\BasicWebAPI.DtoModels.csproj"
+              "C:\\Users\\tomes\\OneDrive\\Desktop\\BasicWeb\\BasicWebAPI\\BasicWebAPI.DtoModels\\BasicWebAPI.DtoModels.csproj": {
+                "projectPath": "C:\\Users\\tomes\\OneDrive\\Desktop\\BasicWeb\\BasicWebAPI\\BasicWebAPI.DtoModels\\BasicWebAPI.DtoModels.csproj"
               }
             }
           }
@@ -63,6 +63,10 @@
             "Microsoft.Extensions.DependencyInjection.Abstractions": {
               "target": "Package",
               "version": "[6.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             }
           },
           "imports": [
@@ -99,14 +103,14 @@
         }
       }
     },
-    "C:\\Users\\tomes\\OneDrive\\Desktop\\Basic Web API\\BasicWebAPI\\BasicWebAPI.Domain\\BasicWebAPI.Domain.csproj": {
+    "C:\\Users\\tomes\\OneDrive\\Desktop\\BasicWeb\\BasicWebAPI\\BasicWebAPI.Domain\\BasicWebAPI.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tomes\\OneDrive\\Desktop\\Basic Web API\\BasicWebAPI\\BasicWebAPI.Domain\\BasicWebAPI.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\tomes\\OneDrive\\Desktop\\BasicWeb\\BasicWebAPI\\BasicWebAPI.Domain\\BasicWebAPI.Domain.csproj",
         "projectName": "BasicWebAPI.Domain",
-        "projectPath": "C:\\Users\\tomes\\OneDrive\\Desktop\\Basic Web API\\BasicWebAPI\\BasicWebAPI.Domain\\BasicWebAPI.Domain.csproj",
+        "projectPath": "C:\\Users\\tomes\\OneDrive\\Desktop\\BasicWeb\\BasicWebAPI\\BasicWebAPI.Domain\\BasicWebAPI.Domain.csproj",
         "packagesPath": "C:\\Users\\tomes\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tomes\\OneDrive\\Desktop\\Basic Web API\\BasicWebAPI\\BasicWebAPI.Domain\\obj\\",
+        "outputPath": "C:\\Users\\tomes\\OneDrive\\Desktop\\BasicWeb\\BasicWebAPI\\BasicWebAPI.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\tomes\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -155,6 +159,10 @@
             "Microsoft.Extensions.DependencyInjection.Abstractions": {
               "target": "Package",
               "version": "[6.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             }
           },
           "imports": [
@@ -191,14 +199,14 @@
         }
       }
     },
-    "C:\\Users\\tomes\\OneDrive\\Desktop\\Basic Web API\\BasicWebAPI\\BasicWebAPI.DtoModels\\BasicWebAPI.DtoModels.csproj": {
+    "C:\\Users\\tomes\\OneDrive\\Desktop\\BasicWeb\\BasicWebAPI\\BasicWebAPI.DtoModels\\BasicWebAPI.DtoModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tomes\\OneDrive\\Desktop\\Basic Web API\\BasicWebAPI\\BasicWebAPI.DtoModels\\BasicWebAPI.DtoModels.csproj",
+        "projectUniqueName": "C:\\Users\\tomes\\OneDrive\\Desktop\\BasicWeb\\BasicWebAPI\\BasicWebAPI.DtoModels\\BasicWebAPI.DtoModels.csproj",
         "projectName": "BasicWebAPI.DtoModels",
-        "projectPath": "C:\\Users\\tomes\\OneDrive\\Desktop\\Basic Web API\\BasicWebAPI\\BasicWebAPI.DtoModels\\BasicWebAPI.DtoModels.csproj",
+        "projectPath": "C:\\Users\\tomes\\OneDrive\\Desktop\\BasicWeb\\BasicWebAPI\\BasicWebAPI.DtoModels\\BasicWebAPI.DtoModels.csproj",
         "packagesPath": "C:\\Users\\tomes\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tomes\\OneDrive\\Desktop\\Basic Web API\\BasicWebAPI\\BasicWebAPI.DtoModels\\obj\\",
+        "outputPath": "C:\\Users\\tomes\\OneDrive\\Desktop\\BasicWeb\\BasicWebAPI\\BasicWebAPI.DtoModels\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\tomes\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -214,7 +222,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\tomes\\OneDrive\\Desktop\\BasicWeb\\BasicWebAPI\\BasicWebAPI.Domain\\BasicWebAPI.Domain.csproj": {
+                "projectPath": "C:\\Users\\tomes\\OneDrive\\Desktop\\BasicWeb\\BasicWebAPI\\BasicWebAPI.Domain\\BasicWebAPI.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -243,6 +255,10 @@
             "Microsoft.Extensions.DependencyInjection.Abstractions": {
               "target": "Package",
               "version": "[6.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             }
           },
           "imports": [
@@ -279,14 +295,14 @@
         }
       }
     },
-    "C:\\Users\\tomes\\OneDrive\\Desktop\\Basic Web API\\BasicWebAPI\\BasicWebAPI.Services\\BasicWebAPI.Services.csproj": {
+    "C:\\Users\\tomes\\OneDrive\\Desktop\\BasicWeb\\BasicWebAPI\\BasicWebAPI.Services\\BasicWebAPI.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tomes\\OneDrive\\Desktop\\Basic Web API\\BasicWebAPI\\BasicWebAPI.Services\\BasicWebAPI.Services.csproj",
+        "projectUniqueName": "C:\\Users\\tomes\\OneDrive\\Desktop\\BasicWeb\\BasicWebAPI\\BasicWebAPI.Services\\BasicWebAPI.Services.csproj",
         "projectName": "BasicWebAPI.Services",
-        "projectPath": "C:\\Users\\tomes\\OneDrive\\Desktop\\Basic Web API\\BasicWebAPI\\BasicWebAPI.Services\\BasicWebAPI.Services.csproj",
+        "projectPath": "C:\\Users\\tomes\\OneDrive\\Desktop\\BasicWeb\\BasicWebAPI\\BasicWebAPI.Services\\BasicWebAPI.Services.csproj",
         "packagesPath": "C:\\Users\\tomes\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tomes\\OneDrive\\Desktop\\Basic Web API\\BasicWebAPI\\BasicWebAPI.Services\\obj\\",
+        "outputPath": "C:\\Users\\tomes\\OneDrive\\Desktop\\BasicWeb\\BasicWebAPI\\BasicWebAPI.Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\tomes\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -303,11 +319,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\tomes\\OneDrive\\Desktop\\Basic Web API\\BasicWebAPI\\BasicWebAPI.DataAccess\\BasicWebAPI.DataAccess.csproj": {
-                "projectPath": "C:\\Users\\tomes\\OneDrive\\Desktop\\Basic Web API\\BasicWebAPI\\BasicWebAPI.DataAccess\\BasicWebAPI.DataAccess.csproj"
+              "C:\\Users\\tomes\\OneDrive\\Desktop\\BasicWeb\\BasicWebAPI\\BasicWebAPI.DataAccess\\BasicWebAPI.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\tomes\\OneDrive\\Desktop\\BasicWeb\\BasicWebAPI\\BasicWebAPI.DataAccess\\BasicWebAPI.DataAccess.csproj"
               },
-              "C:\\Users\\tomes\\OneDrive\\Desktop\\Basic Web API\\BasicWebAPI\\BasicWebAPI.DtoModels\\BasicWebAPI.DtoModels.csproj": {
-                "projectPath": "C:\\Users\\tomes\\OneDrive\\Desktop\\Basic Web API\\BasicWebAPI\\BasicWebAPI.DtoModels\\BasicWebAPI.DtoModels.csproj"
+              "C:\\Users\\tomes\\OneDrive\\Desktop\\BasicWeb\\BasicWebAPI\\BasicWebAPI.DtoModels\\BasicWebAPI.DtoModels.csproj": {
+                "projectPath": "C:\\Users\\tomes\\OneDrive\\Desktop\\BasicWeb\\BasicWebAPI\\BasicWebAPI.DtoModels\\BasicWebAPI.DtoModels.csproj"
               }
             }
           }
@@ -342,6 +358,10 @@
             "Microsoft.Extensions.DependencyInjection.Abstractions": {
               "target": "Package",
               "version": "[6.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             }
           },
           "imports": [

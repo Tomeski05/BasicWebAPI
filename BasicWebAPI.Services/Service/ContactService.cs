@@ -85,17 +85,21 @@ namespace BasicWebAPI.Services.Service
             
         }
 
-        public Contact GetContactsWithCompanyAndCountry(int contactId)
+        public IEnumerable<GetContactsDto> GetContactsWithCompanyAndCountry()
         {
-            try
+            //return _contactRepository.GetContactsWithCompanyAndCountry();
+
+            var contacts = _contactRepository.GetContactsWithCompanyAndCountry();
+
+            var contactDtos = contacts.Select(contact => new GetContactsDto
             {
-                return _contactRepository.GetContactsWithCompanyAndCountry(contactId);
-            }
-            catch (Exception ex)
-            {
-                var c = ex;
-                throw new Exception("Не постои!");
-            }
+                ContactId = contact.ContactId,
+                Name = contact.Name,
+                CompanyName = contact.Company?.Name,
+                CountryName = contact.Country?.Name
+            });
+
+            return contactDtos;
         }
 
         public string UpdateContact(ContactDto contact)
@@ -105,6 +109,8 @@ namespace BasicWebAPI.Services.Service
                 Contact oldContact = _contactRepository.GetContactById(contact.ContactId);
 
                 oldContact.Name = contact.Name;
+                oldContact.CompanyId = contact.CompanyId;
+                oldContact.CountryId = contact.CountryId;
 
                 _contactRepository.UpdateContact(oldContact);
                 return "Контактот е успешно ажуриран!";

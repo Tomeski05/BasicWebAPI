@@ -1,6 +1,7 @@
 ﻿using BasicWebAPI.DataAccess.Interface;
 using BasicWebAPI.Domain.DBContext;
 using BasicWebAPI.Domain.Models;
+using BasicWebAPI.DtoModels.ContactDto;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -30,12 +31,12 @@ namespace BasicWebAPI.DataAccess.Repository
             return _dbContext.Contacts.SingleOrDefault(contact => contact.ContactId == id);
         }
 
-        public Contact GetContactsWithCompanyAndCountry(int contactId)
+        public List<Contact> GetContactsWithCompanyAndCountry()
         {
             return _dbContext.Contacts
             .Include(c => c.Company)
             .Include(c => c.Country)
-            .FirstOrDefault(c => c.ContactId == contactId);
+            .ToList();
         }
 
         public void AddContact(Contact contact)

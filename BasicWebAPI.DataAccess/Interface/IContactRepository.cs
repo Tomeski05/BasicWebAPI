@@ -1,4 +1,5 @@
 ﻿using BasicWebAPI.Domain.Models;
+using BasicWebAPI.DtoModels.ContactDto;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +15,7 @@ namespace BasicWebAPI.DataAccess.Interface
         void AddContact(Contact contact);
         void UpdateContact(Contact contact);
         void DeleteContact(int id);
-        Contact GetContactsWithCompanyAndCountry(int contactId);
+        List<Contact> GetContactsWithCompanyAndCountry();
         List<Contact> FilterContacts(int? countryId, int? companyId);
     }
 }

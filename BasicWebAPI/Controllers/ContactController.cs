@@ -53,14 +53,14 @@ namespace BasicWebAPI.Controllers
         //    return "value";
         //}
 
-        [HttpGet("getContactsWithCompanyAndCountry/{id}")]
-        public ActionResult<string> GetContactsWithCompanyAndCountry(int id)
+        [HttpGet("getContactsWithCompanyAndCountry")]
+        public IActionResult GetContactsWithCompanyAndCountry()
         {
-            var result = _contactService.GetContactsWithCompanyAndCountry(id);
+            var result = _contactService.GetContactsWithCompanyAndCountry();
             return Ok(result);
         }
 
-        [HttpGet("filterContacts/{id}")]
+        [HttpGet("filterContacts")]
         public ActionResult<string> FilterContacts(int? countryId, int? companyId)
         {
             var result = _contactService.FilterContacts(countryId, companyId);
