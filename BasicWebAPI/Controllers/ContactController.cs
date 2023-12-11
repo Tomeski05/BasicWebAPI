@@ -66,7 +66,7 @@ namespace BasicWebAPI.Controllers
         }
 
         // PUT api/<ContactController>/5
-        [HttpPut("UpdateContact")]
+        [HttpPut("updateContact")]
         public ActionResult UpdateContact([FromBody] ContactDto contact)
         {
             try
@@ -82,7 +82,7 @@ namespace BasicWebAPI.Controllers
         }
 
         // DELETE api/<ContactController>/5
-        [HttpDelete("DeleteContact/{id}")]
+        [HttpDelete("deleteContact/{id}")]
         public ActionResult<string> DeleteContact(int id)
         {
             try

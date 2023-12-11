@@ -10,7 +10,7 @@ using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace BasicWebAPI.DataAccess.Repository
 {
-    public class CountryRepository : ICountryRepository
+    public class CountryRepository : IBaseRepository<Country>
     {
         private readonly ApplicationDbContext _dbContext;
 
@@ -24,12 +24,12 @@ namespace BasicWebAPI.DataAccess.Repository
             return _dbContext.Countries.SingleOrDefault(countries => countries.CountryId == id);
         }
 
-        public List<Country> GetAllCountries()
+        public List<Country> GetAll()
         {
             return _dbContext.Countries.ToList();
         }
 
-        public void AddNewCountry(Country country)
+        public void AddNew(Country country)
         {
             try
             {
@@ -42,14 +42,7 @@ namespace BasicWebAPI.DataAccess.Repository
             }
         }
 
-        public void DeleteCountry(int id)
-        {
-            Country country = _dbContext.Countries.SingleOrDefault(country => country.CountryId == id);
-            _dbContext.Countries.Remove(country);
-            _dbContext.SaveChanges();
-        }
-
-        public void UpdateCountry(Country country)
+        public void Update(Country country)
         {
             try
             {
@@ -60,6 +53,13 @@ namespace BasicWebAPI.DataAccess.Repository
             {
                 throw new Exception("Настана грешка!");
             }
+        }
+
+        public void Delete(int id)
+        {
+            Country country = _dbContext.Countries.SingleOrDefault(country => country.CountryId == id);
+            _dbContext.Countries.Remove(country);
+            _dbContext.SaveChanges();
         }
     }
 }

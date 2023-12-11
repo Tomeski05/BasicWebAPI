@@ -15,18 +15,16 @@ namespace BasicWebAPI.Services.Service
 {
     public class CountryService: ICountryService
     {
-        //private readonly ApplicationDbContext _dbContext;
-        private readonly ICountryRepository _countryRepository;
+        private readonly IBaseRepository<Country> _countryRepository;
 
-        public CountryService(ICountryRepository countryRepository)
+        public CountryService(IBaseRepository<Country> countryRepository)
         {
-            //_dbContext = dbContext;
             _countryRepository = countryRepository;
         }
 
         public List<Country> GetAllCountries()
         {
-            return _countryRepository.GetAllCountries();
+            return _countryRepository.GetAll();
         }
 
         public string AddNewCountry(CountryDto country)
@@ -44,8 +42,8 @@ namespace BasicWebAPI.Services.Service
                     Name = country.Name          
                 };
 
-                _countryRepository.AddNewCountry(newCountry);
-                return "Успрешно креирање на нова земја";
+                _countryRepository.AddNew(newCountry);
+                return "Успешно креирање на нова земја";
             }
             catch (Exception ex)
             {
@@ -63,7 +61,7 @@ namespace BasicWebAPI.Services.Service
                 throw new Exception("Не постои таква земја.");
             }
 
-            _countryRepository.DeleteCountry(countryId);
+            _countryRepository.Delete(countryId);
             return "Земјата е успешно избришана!";
         }
 
@@ -75,7 +73,7 @@ namespace BasicWebAPI.Services.Service
 
                 oldCountry.Name = country.Name;
 
-                _countryRepository.UpdateCountry(oldCountry);
+                _countryRepository.Update(oldCountry);
                 return "Земјата е успешно ажурирана!";
             }
             catch (Exception ex)

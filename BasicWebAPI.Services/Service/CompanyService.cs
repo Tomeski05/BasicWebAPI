@@ -16,19 +16,19 @@ namespace BasicWebAPI.Services.Service
 {
     public class CompanyService: ICompanyService
     {
-        private readonly ICompanyRepository<Company> _companyRepository;
+        private readonly IBaseRepository<Company> _companyRepository;
 
-        public CompanyService(ICompanyRepository<Company> companyRepository)
+        public CompanyService(IBaseRepository<Company> companyRepository)
         {
             _companyRepository = companyRepository;
         }
 
         public List<Company> GetAllCompanies()
         {
-            return _companyRepository.GetAllCompanies();
+            return _companyRepository.GetAll();
         }
 
-        public string AddNewCompany(CompanyDto company) //async Task<Company>
+        public string AddNewCompany(CompanyDto company)
         {
             if (string.IsNullOrEmpty(company.Name))
             {
@@ -43,7 +43,7 @@ namespace BasicWebAPI.Services.Service
                     Name = company.Name
                 };
 
-                _companyRepository.AddNewCompany(newCompany);
+                _companyRepository.AddNew(newCompany);
                 return "Успешно креирање на нова компанија!";
             }
             catch (Exception ex)
@@ -62,7 +62,7 @@ namespace BasicWebAPI.Services.Service
                 throw new Exception("Не постои таква компанија.");
             }
 
-            _companyRepository.DeleteCompany(companyId);
+            _companyRepository.Delete(companyId);
             return "Компанијата е успешно избришана!";
         }
 
@@ -74,7 +74,7 @@ namespace BasicWebAPI.Services.Service
 
                 oldCompany.Name = company.Name;
 
-                _companyRepository.UpdateCompany(oldCompany);
+                _companyRepository.Update(oldCompany);
                 return "Компанијата е успешно ажурирана!";
             }
             catch (Exception ex)

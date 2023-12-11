@@ -21,17 +21,11 @@ namespace BasicWebAPI.Controllers
         }
 
         // GET: api/<CountryController>
-        [HttpGet]
-        public IEnumerable<string> Get()
+        [HttpGet("details")]
+        public ActionResult<string> Get()
         {
-            return new string[] { "value1", "value2" };
-        }
-
-        // GET api/<CountryController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
+            var result = _countryService.GetAllCountries();
+            return Ok(result);
         }
 
         // POST api/<CountryController>

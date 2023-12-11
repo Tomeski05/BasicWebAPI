@@ -8,12 +8,12 @@ using System.Threading.Tasks;
 
 namespace BasicWebAPI.DataAccess.Interface
 {
-    public interface ICompanyRepository<T>
+    public interface IBaseRepository<T>
     {
-        List<Company> GetAllCompanies();
+        List<T> GetAll();
         T GetById(int id);
-        void AddNewCompany(Company company);
-        void UpdateCompany(Company company);
-        void DeleteCompany(int id);
+        void AddNew(T company);
+        void Update(T company);
+        void Delete(int id);
     }
 }

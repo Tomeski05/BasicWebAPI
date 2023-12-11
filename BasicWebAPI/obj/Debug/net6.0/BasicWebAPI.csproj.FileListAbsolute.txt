@@ -140,7 +140,6 @@ C:\Users\tomes\OneDrive\Desktop\BasicWeb\BasicWebAPI\BasicWebAPI\bin\Debug\net6.
 C:\Users\tomes\OneDrive\Desktop\BasicWeb\BasicWebAPI\BasicWebAPI\bin\Debug\net6.0\BasicWebAPI.IoC.pdb
 C:\Users\tomes\OneDrive\Desktop\BasicWeb\BasicWebAPI\BasicWebAPI\bin\Debug\net6.0\BasicWebAPI.Services.pdb
 C:\Users\tomes\OneDrive\Desktop\BasicWeb\BasicWebAPI\BasicWebAPI\bin\Debug\net6.0\BasicWebAPI.DataAccess.pdb
-C:\Users\tomes\OneDrive\Desktop\BasicWeb\BasicWebAPI\BasicWebAPI\obj\Debug\net6.0\BasicWebAPI.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\tomes\OneDrive\Desktop\BasicWeb\BasicWebAPI\BasicWebAPI\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\tomes\OneDrive\Desktop\BasicWeb\BasicWebAPI\BasicWebAPI\obj\Debug\net6.0\staticwebassets.development.json
 C:\Users\tomes\OneDrive\Desktop\BasicWeb\BasicWebAPI\BasicWebAPI\obj\Debug\net6.0\staticwebassets\msbuild.BasicWebAPI.Microsoft.AspNetCore.StaticWebAssets.props

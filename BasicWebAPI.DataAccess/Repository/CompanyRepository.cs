@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace BasicWebAPI.DataAccess.Repository
 {
-    public class CompanyRepository : ICompanyRepository<Company>
+    public class CompanyRepository : IBaseRepository<Company>
     {
         private readonly ApplicationDbContext _dbContext;
 
@@ -24,12 +24,12 @@ namespace BasicWebAPI.DataAccess.Repository
             return _dbContext.Companies.SingleOrDefault(company => company.CompanyId == id);
         }
 
-        public List<Company> GetAllCompanies()
+        public List<Company> GetAll()
         {
             return _dbContext.Companies.ToList();
         }
 
-        public void AddNewCompany(Company company)
+        public void AddNew(Company company)
         {
             try
             {
@@ -42,14 +42,14 @@ namespace BasicWebAPI.DataAccess.Repository
             }
         }
 
-        public void DeleteCompany(int id)
+        public void Delete(int id)
         {
             Company company = _dbContext.Companies.SingleOrDefault(company => company.CompanyId == id);
             _dbContext.Companies.Remove(company);
             _dbContext.SaveChanges();
         }
 
-        public void UpdateCompany(Company company)
+        public void Update(Company company)
         {
             try
             {

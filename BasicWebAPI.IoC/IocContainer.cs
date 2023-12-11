@@ -26,15 +26,15 @@ namespace BasicWebAPI.IoC
 
             //Register Services
 
-            services.AddTransient<ICompanyService, CompanyService>();
-            services.AddTransient<ICountryService, CountryService>();
-            services.AddTransient<IContactService, ContactService>();
+            services.AddScoped<ICompanyService, CompanyService>();
+            services.AddScoped<ICountryService, CountryService>();
+            services.AddScoped<IContactService, ContactService>();
 
             //Register Repository
 
-            services.AddTransient<ICompanyRepository<Company>, CompanyRepository>();
-            services.AddTransient<ICountryRepository, CountryRepository>();
-            services.AddTransient<IContactRepository, ContactRepository>();
+            services.AddScoped<IBaseRepository<Company>, CompanyRepository>();
+            services.AddScoped<IBaseRepository<Country>, CountryRepository>();
+            services.AddScoped<IContactRepository, ContactRepository>();
 
 
             return services;

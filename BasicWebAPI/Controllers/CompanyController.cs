@@ -18,7 +18,7 @@ namespace BasicWebAPI.Controllers
         }
 
         // GET: api/<CompanyController>
-        [HttpGet]
+        [HttpGet("details")]
         public ActionResult<List<CompanyDto>> GetAllCompanies()
         {
             try
@@ -30,13 +30,6 @@ namespace BasicWebAPI.Controllers
             {
                 return BadRequest(ex.Message);
             }
-        }
-
-        // GET api/<CompanyController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
         }
 
         // POST api/<CompanyController>
