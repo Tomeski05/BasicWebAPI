@@ -34,11 +34,11 @@ namespace BasicWebAPI.Controllers
 
         // POST api/<CompanyController>
         [HttpPost("addNewCompany")]
-        public ActionResult<string> AddNewCompany([FromBody] CompanyDto newCompany)
+        public ActionResult AddNewCompany([FromBody] CompanyDto newCompany)
         {
             try
             {
-                string result = _companyService.AddNewCompany(newCompany);
+                var result = _companyService.AddNewCompany(newCompany);
                 return Ok(result);
             }
             catch (Exception ex)
@@ -54,7 +54,7 @@ namespace BasicWebAPI.Controllers
         {
             try
             {
-                string result = _companyService.UpdateCompany(company);
+                var result = _companyService.UpdateCompany(company);
                 return Ok(result);
             }
             catch (Exception ex)
@@ -66,11 +66,11 @@ namespace BasicWebAPI.Controllers
 
         // DELETE api/<CompanyController>/5
         [HttpDelete("deleteCompany/{id}")]
-        public ActionResult<string> DeleteCompany(int id)
+        public ActionResult DeleteCompany(int id)
         {
             try
             {
-                string result = _companyService.DeleteCompany(id);
+                var result = _companyService.DeleteCompany(id);
                 return Ok(result);
             }
             catch (Exception ex)

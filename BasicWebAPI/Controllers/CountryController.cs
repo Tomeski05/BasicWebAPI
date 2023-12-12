@@ -22,25 +22,34 @@ namespace BasicWebAPI.Controllers
 
         // GET: api/<CountryController>
         [HttpGet("details")]
-        public ActionResult<string> Get()
-        {
-            var result = _countryService.GetAllCountries();
-            return Ok(result);
-        }
-
-        // POST api/<CountryController>
-        [HttpPost("addNewCountry")]
-        public ActionResult<string> AddNewCountry([FromBody] CountryDto newCountry)
+        public ActionResult GetAll()
         {
             try
             {
-                string result = _countryService.AddNewCountry(newCountry);
+                var result = _countryService.GetAllCountries();
                 return Ok(result);
             }
             catch (Exception ex)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError,
-                                    new { Message = ex.Message });
+                    new { Message = ex.Message });
+            }
+
+        }
+
+        // POST api/<CountryController>
+        [HttpPost("addNewCountry")]
+        public ActionResult AddNewCountry([FromBody] CountryDto newCountry)
+        {
+            try
+            {
+                var result = _countryService.AddNewCountry(newCountry);
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    new { Message = ex.Message });
             }
         }
 
@@ -50,7 +59,7 @@ namespace BasicWebAPI.Controllers
         {
             try
             {
-                string result = _countryService.UpdateCountry(country);
+                var result = _countryService.UpdateCountry(country);
                 return Ok(result);
             }
             catch (Exception ex)
@@ -62,11 +71,11 @@ namespace BasicWebAPI.Controllers
 
         // DELETE api/<CountryController>/5
         [HttpDelete("deleteCompany/{id}")]
-        public ActionResult<string> DeleteCountry(int id)
+        public ActionResult DeleteCountry(int id)
         {
             try
             {
-                string result = _countryService.DeleteCountry(id);
+                var result = _countryService.DeleteCountry(id);
                 return Ok(result);
             }
             catch (Exception ex)

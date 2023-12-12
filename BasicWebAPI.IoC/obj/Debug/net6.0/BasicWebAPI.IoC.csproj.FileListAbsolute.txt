@@ -19,12 +19,6 @@ C:\Users\tomes\OneDrive\Desktop\Basic Web API\BasicWebAPI\BasicWebAPI.IoC\obj\De
 C:\Users\tomes\OneDrive\Desktop\Basic Web API\BasicWebAPI\BasicWebAPI.IoC\obj\Debug\net6.0\refint\BasicWebAPI.IoC.dll
 C:\Users\tomes\OneDrive\Desktop\Basic Web API\BasicWebAPI\BasicWebAPI.IoC\obj\Debug\net6.0\BasicWebAPI.IoC.pdb
 C:\Users\tomes\OneDrive\Desktop\Basic Web API\BasicWebAPI\BasicWebAPI.IoC\obj\Debug\net6.0\ref\BasicWebAPI.IoC.dll
-C:\Users\tomes\OneDrive\Desktop\BasicWeb\BasicWebAPI\BasicWebAPI.IoC\obj\Debug\net6.0\BasicWebAPI.IoC.csproj.AssemblyReference.cache
-C:\Users\tomes\OneDrive\Desktop\BasicWeb\BasicWebAPI\BasicWebAPI.IoC\obj\Debug\net6.0\BasicWebAPI.IoC.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\tomes\OneDrive\Desktop\BasicWeb\BasicWebAPI\BasicWebAPI.IoC\obj\Debug\net6.0\BasicWebAPI.IoC.AssemblyInfoInputs.cache
-C:\Users\tomes\OneDrive\Desktop\BasicWeb\BasicWebAPI\BasicWebAPI.IoC\obj\Debug\net6.0\BasicWebAPI.IoC.AssemblyInfo.cs
-C:\Users\tomes\OneDrive\Desktop\BasicWeb\BasicWebAPI\BasicWebAPI.IoC\obj\Debug\net6.0\BasicWebAPI.IoC.csproj.CoreCompileInputs.cache
-C:\Users\tomes\OneDrive\Desktop\BasicWeb\BasicWebAPI\BasicWebAPI.IoC\obj\Debug\net6.0\BasicWebAPI.IoC.sourcelink.json
 C:\Users\tomes\OneDrive\Desktop\BasicWeb\BasicWebAPI\BasicWebAPI.IoC\bin\Debug\net6.0\BasicWebAPI.IoC.deps.json
 C:\Users\tomes\OneDrive\Desktop\BasicWeb\BasicWebAPI\BasicWebAPI.IoC\bin\Debug\net6.0\BasicWebAPI.IoC.dll
 C:\Users\tomes\OneDrive\Desktop\BasicWeb\BasicWebAPI\BasicWebAPI.IoC\bin\Debug\net6.0\BasicWebAPI.IoC.pdb
@@ -38,6 +32,12 @@ C:\Users\tomes\OneDrive\Desktop\BasicWeb\BasicWebAPI\BasicWebAPI.IoC\bin\Debug\n
 C:\Users\tomes\OneDrive\Desktop\BasicWeb\BasicWebAPI\BasicWebAPI.IoC\bin\Debug\net6.0\BasicWebAPI.Automapper.pdb
 C:\Users\tomes\OneDrive\Desktop\BasicWeb\BasicWebAPI\BasicWebAPI.IoC\bin\Debug\net6.0\BasicWebAPI.DataAccess.pdb
 C:\Users\tomes\OneDrive\Desktop\BasicWeb\BasicWebAPI\BasicWebAPI.IoC\bin\Debug\net6.0\BasicWebAPI.DtoModels.pdb
+C:\Users\tomes\OneDrive\Desktop\BasicWeb\BasicWebAPI\BasicWebAPI.IoC\obj\Debug\net6.0\BasicWebAPI.IoC.csproj.AssemblyReference.cache
+C:\Users\tomes\OneDrive\Desktop\BasicWeb\BasicWebAPI\BasicWebAPI.IoC\obj\Debug\net6.0\BasicWebAPI.IoC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tomes\OneDrive\Desktop\BasicWeb\BasicWebAPI\BasicWebAPI.IoC\obj\Debug\net6.0\BasicWebAPI.IoC.AssemblyInfoInputs.cache
+C:\Users\tomes\OneDrive\Desktop\BasicWeb\BasicWebAPI\BasicWebAPI.IoC\obj\Debug\net6.0\BasicWebAPI.IoC.AssemblyInfo.cs
+C:\Users\tomes\OneDrive\Desktop\BasicWeb\BasicWebAPI\BasicWebAPI.IoC\obj\Debug\net6.0\BasicWebAPI.IoC.csproj.CoreCompileInputs.cache
+C:\Users\tomes\OneDrive\Desktop\BasicWeb\BasicWebAPI\BasicWebAPI.IoC\obj\Debug\net6.0\BasicWebAPI.IoC.sourcelink.json
 C:\Users\tomes\OneDrive\Desktop\BasicWeb\BasicWebAPI\BasicWebAPI.IoC\obj\Debug\net6.0\BasicWebAPI.IoC.csproj.CopyComplete
 C:\Users\tomes\OneDrive\Desktop\BasicWeb\BasicWebAPI\BasicWebAPI.IoC\obj\Debug\net6.0\BasicWebAPI.IoC.dll
 C:\Users\tomes\OneDrive\Desktop\BasicWeb\BasicWebAPI\BasicWebAPI.IoC\obj\Debug\net6.0\refint\BasicWebAPI.IoC.dll

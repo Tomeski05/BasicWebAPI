@@ -21,12 +21,26 @@ namespace BasicWebAPI.DataAccess.Repository
 
         public Company GetById(int id)
         {
-            return _dbContext.Companies.SingleOrDefault(company => company.CompanyId == id);
+            try
+            {
+                return _dbContext.Companies.SingleOrDefault(company => company.CompanyId == id);
+            }
+            catch (Exception)
+            {
+                throw new Exception("Не постои компанија со тоа ид!");
+            }
         }
 
         public List<Company> GetAll()
         {
-            return _dbContext.Companies.ToList();
+            try
+            {
+                return _dbContext.Companies.ToList();
+            }
+            catch (Exception)
+            {
+                throw new Exception("Настана грешка!");
+            }
         }
 
         public void AddNew(Company company)
@@ -38,15 +52,22 @@ namespace BasicWebAPI.DataAccess.Repository
             }
             catch (Exception)
             {
-                throw new Exception("Настана грешка!");
+                throw new Exception("Настана грешка при додавање на нова компанија!");
             }
         }
 
         public void Delete(int id)
         {
-            Company company = _dbContext.Companies.SingleOrDefault(company => company.CompanyId == id);
-            _dbContext.Companies.Remove(company);
-            _dbContext.SaveChanges();
+            try
+            {
+                Company company = _dbContext.Companies.SingleOrDefault(company => company.CompanyId == id);
+                _dbContext.Companies.Remove(company);
+                _dbContext.SaveChanges();
+            }
+            catch (Exception)
+            {
+                throw new Exception("Настана грешка при бришење!");
+            }
         }
 
         public void Update(Company company)
@@ -59,7 +80,7 @@ namespace BasicWebAPI.DataAccess.Repository
             }
             catch (Exception)
             {
-                throw new Exception("Настана грешка!");
+                throw new Exception("Настана грешка при ажурирање на податоците!");
             }
         }
     }

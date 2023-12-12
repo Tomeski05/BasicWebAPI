@@ -55,15 +55,22 @@ namespace BasicWebAPI.Services.Service
 
         public string DeleteCompany(int companyId)
         {
-            Company company = _companyRepository.GetById(companyId);
-
-            if (company == null)
+            if (companyId == null)
             {
-                throw new Exception("Не постои таква компанија.");
+                throw new Exception("Полето е задолжително!");
             }
 
-            _companyRepository.Delete(companyId);
-            return "Компанијата е успешно избришана!";
+            try
+            {
+                Company company = _companyRepository.GetById(companyId);
+                _companyRepository.Delete(companyId);
+                return "Компанијата е успешно избришана!";
+            }
+            catch (Exception ex)
+            {
+                var c = ex;
+                throw new Exception("Грешка при бришење на податоците!");
+            }
         }
 
         public string UpdateCompany(CompanyDto company)

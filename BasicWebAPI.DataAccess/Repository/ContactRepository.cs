@@ -23,20 +23,41 @@ namespace BasicWebAPI.DataAccess.Repository
 
         public List<Contact> GetAllContacts()
         {
-            return _dbContext.Contacts.ToList();
+            try
+            {
+                return _dbContext.Contacts.ToList();
+            }
+            catch (Exception)
+            {
+                throw new Exception("Настана грешка!");
+            }
         }
 
         public Contact GetContactById(int id)
         {
-            return _dbContext.Contacts.SingleOrDefault(contact => contact.ContactId == id);
+            try
+            {
+                return _dbContext.Contacts.SingleOrDefault(contact => contact.ContactId == id);
+            }
+            catch (Exception)
+            {
+                throw new Exception("Настана грешка!");
+            }
         }
 
         public List<Contact> GetContactsWithCompanyAndCountry()
         {
-            return _dbContext.Contacts
-            .Include(c => c.Company)
-            .Include(c => c.Country)
-            .ToList();
+            try
+            {
+                return _dbContext.Contacts
+                .Include(c => c.Company)
+                .Include(c => c.Country)
+                .ToList();
+            }
+            catch (Exception)
+            {
+                throw new Exception("Настана грешка!");
+            }
         }
 
         public void AddContact(Contact contact)
@@ -48,15 +69,22 @@ namespace BasicWebAPI.DataAccess.Repository
             }
             catch (Exception)
             {
-                throw new Exception("Настана грешка!");
+                throw new Exception("Настана грешка при додавање на нов контакт!");
             }
         }
 
         public void DeleteContact(int id)
         {
-            Contact contact = _dbContext.Contacts.SingleOrDefault(contact => contact.ContactId == id);
-            _dbContext.Contacts.Remove(contact);
-            _dbContext.SaveChanges();
+            try
+            {
+                Contact contact = _dbContext.Contacts.SingleOrDefault(contact => contact.ContactId == id);
+                _dbContext.Contacts.Remove(contact);
+                _dbContext.SaveChanges();
+            }
+            catch (Exception)
+            {
+                throw new Exception("Настана грешка при бришење на контакт!");
+            }
         }
 
         public List<Contact> FilterContacts(int? countryId, int? companyId)
@@ -85,7 +113,7 @@ namespace BasicWebAPI.DataAccess.Repository
             }
             catch (Exception)
             {
-                throw new Exception("Настана грешка!");
+                throw new Exception("Настана грешка при ажурирање на контакт!");
             }
         }
     }

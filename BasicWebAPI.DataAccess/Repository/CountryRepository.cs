@@ -21,12 +21,26 @@ namespace BasicWebAPI.DataAccess.Repository
 
         public Country GetById(int id)
         {
-            return _dbContext.Countries.SingleOrDefault(countries => countries.CountryId == id);
+            try
+            {
+                return _dbContext.Countries.SingleOrDefault(countries => countries.CountryId == id);
+            }
+            catch (Exception)
+            {
+                throw new Exception("Настана грешка!");
+            }
         }
 
         public List<Country> GetAll()
         {
-            return _dbContext.Countries.ToList();
+            try
+            {
+                return _dbContext.Countries.ToList();
+            }
+            catch (Exception)
+            {
+                throw new Exception("Настана грешка!");
+            }
         }
 
         public void AddNew(Country country)
@@ -38,7 +52,7 @@ namespace BasicWebAPI.DataAccess.Repository
             }
             catch (Exception)
             {
-                throw new Exception("Настана грешка!");
+                throw new Exception("Настана грешка при креирање на нова земја!");
             }
         }
 
@@ -51,15 +65,22 @@ namespace BasicWebAPI.DataAccess.Repository
             }
             catch (Exception)
             {
-                throw new Exception("Настана грешка!");
+                throw new Exception("Настана грешка при ажурирање на податоците!");
             }
         }
 
         public void Delete(int id)
         {
-            Country country = _dbContext.Countries.SingleOrDefault(country => country.CountryId == id);
-            _dbContext.Countries.Remove(country);
-            _dbContext.SaveChanges();
+            try
+            {
+                Country country = _dbContext.Countries.SingleOrDefault(country => country.CountryId == id);
+                _dbContext.Countries.Remove(country);
+                _dbContext.SaveChanges();
+            }
+            catch (Exception)
+            {
+                throw new Exception("Настана грешка при бришење!");
+            }
         }
     }
 }

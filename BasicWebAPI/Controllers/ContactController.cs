@@ -31,19 +31,28 @@ namespace BasicWebAPI.Controllers
             }
             catch (Exception ex)
             {
-                return BadRequest(ex.Message);
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    new { Message = ex.Message });
             }
         }
 
         [HttpGet("getContactsWithCompanyAndCountry")]
-        public IActionResult GetContactsWithCompanyAndCountry()
+        public ActionResult GetContactsWithCompanyAndCountry()
         {
-            var result = _contactService.GetContactsWithCompanyAndCountry();
-            return Ok(result);
+            try
+            {
+                var result = _contactService.GetContactsWithCompanyAndCountry();
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    new { Message = ex.Message });
+            }
         }
 
         [HttpGet("filterContacts")]
-        public ActionResult<string> FilterContacts(int? countryId, int? companyId)
+        public ActionResult FilterContacts(int? countryId, int? companyId)
         {
             var result = _contactService.FilterContacts(countryId, companyId);
             return Ok(result);
@@ -51,11 +60,11 @@ namespace BasicWebAPI.Controllers
 
         // POST api/<ContactController>
         [HttpPost("addNewContact")]
-        public ActionResult<string> AddNewContact([FromBody] ContactDto contact)
+        public ActionResult AddNewContact([FromBody] ContactDto contact)
         {
             try
             {
-                string result = _contactService.AddContact(contact);
+                var result = _contactService.AddContact(contact);
                 return Ok(result);
             }
             catch (Exception ex)
@@ -71,7 +80,7 @@ namespace BasicWebAPI.Controllers
         {
             try
             {
-                string result = _contactService.UpdateContact(contact);
+                var result = _contactService.UpdateContact(contact);
                 return Ok(result);
             }
             catch (Exception ex)
@@ -83,11 +92,11 @@ namespace BasicWebAPI.Controllers
 
         // DELETE api/<ContactController>/5
         [HttpDelete("deleteContact/{id}")]
-        public ActionResult<string> DeleteContact(int id)
+        public ActionResult DeleteContact(int id)
         {
             try
             {
-                string result = _contactService.DeleteContact(id);
+                var result = _contactService.DeleteContact(id);
                 return Ok(result);
             }
             catch (Exception ex)

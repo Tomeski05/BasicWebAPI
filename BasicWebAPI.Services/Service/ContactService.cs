@@ -8,6 +8,7 @@ using BasicWebAPI.DtoModels.ContactDto;
 using BasicWebAPI.Services.Interface;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -68,15 +69,22 @@ namespace BasicWebAPI.Services.Service
 
         public string DeleteContact(int contactId)
         {
-            Contact contact = _contactRepository.GetContactById(contactId);
-
-            if (contact == null)
+            if (contactId == null)
             {
-                throw new Exception("Не постои таков контакт.");
+                throw new Exception("Полето е задолжително!");
             }
 
-            _contactRepository.DeleteContact(contactId);
-            return "Контактот е успешно избришан!";
+            try
+            {
+                Contact contact = _contactRepository.GetContactById(contactId);
+                _contactRepository.DeleteContact(contactId);
+                return "Контактот е успешно избришан!";
+            }
+            catch (Exception ex)
+            {
+                var c = ex;
+                throw new Exception("Грешка при бришење!");
+            }
         }
 
         public List<Contact> FilterContacts(int? countryId, int? companyId)
@@ -89,8 +97,7 @@ namespace BasicWebAPI.Services.Service
             {
                 var c = ex;
                 throw new Exception("Не постои таков контакт!");
-            }
-            
+            } 
         }
 
         public IEnumerable<GetContactsDto> GetContactsWithCompanyAndCountry()

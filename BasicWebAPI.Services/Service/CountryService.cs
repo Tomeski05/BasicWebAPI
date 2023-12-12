@@ -58,7 +58,7 @@ namespace BasicWebAPI.Services.Service
 
             if (country == null)
             {
-                throw new Exception("Не постои таква земја.");
+                throw new Exception("Задолжително поле!");
             }
 
             _countryRepository.Delete(countryId);
